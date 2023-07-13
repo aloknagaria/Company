@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Company</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/myCompany1.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-sharp fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>My Company</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos eius voluptatibus nihil mollitia quam tempora aliquam omnis sequi odit est? <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel optio corrupti ducimus dolore, quo dolorum?</p>
+            <a href="" class="hero-btn">Visit us to know more</a>
+        </div>
+    </section>
+
+<!-- Product -->
+    <section class="product">
+        <h1>Products we offer</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="row">
+            <div class="product-col">
+                <h3>Product 1</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, incidunt quod iste assumenda totam laboriosam ipsum a in, dolorum accusamus beatae dolorem delectus, temporibus recusandae? Temporibus delectus porro sequi dolores.</p>
+            </div>
+            <div class="product-col">
+                <h3>Product 2</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, incidunt quod iste assumenda totam laboriosam ipsum a in, dolorum accusamus beatae dolorem delectus, temporibus recusandae? Temporibus delectus porro sequi dolores.</p>
+            </div>
+            <div class="product-col">
+                <h3>Product 3</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, incidunt quod iste assumenda totam laboriosam ipsum a in, dolorum accusamus beatae dolorem delectus, temporibus recusandae? Temporibus delectus porro sequi dolores.</p>
+            </div>
+        </div>
+    </section>
+<!-- campus -->
+    <section class="campus">
+        <h1>Our Global Presence</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+
+        <div class="row">
+            <div class="campus-col">
+                <img src="images/london.png" alt="">
+                <div class="layer">
+                    <h3>DELHI</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/newyork.png" alt="">
+                <div class="layer">
+                    <h3>LONDON</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/washington.png" alt="">
+                <div class="layer">
+                    <h3>WASHINGTON</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- Call to action -->
+
+    <section class="cta">
+        <h1>Conatact us and you wont regret your decision <br> 24/7 for your help</h1>
+        <a href="Contact.html" class="hero-btn">CONTACT US</a>
+    </section>
+
+<!-- Footer -->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit nostrum mollitia eaque quas tempora quia nihil sint distinctio asperiores
+        <br> alias consequatur minus, doloribus incidunt error, consequuntur quae deleniti, ducimus repudiandae?</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <a target="_blank" href="https://www.instagram.com/alok_nagaria/"><i class="fa-brands fa-instagram"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/aloknagaria/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <p>Made with <i class="fa-regular fa-heart"></i> by Alok Nagaria</p>
+    </section>
+
+<!-- JavaScript for Toggele Menu -->
+    <script>
+        let navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
